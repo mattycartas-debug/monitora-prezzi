@@ -90,13 +90,11 @@ def get_soup(url):
 
 def conta_pagine(soup):
     numeri = []
+    # Legge SOLO i numeri dai link href, non dal testo (evita di confondere prezzi con pagine)
     for a in soup.find_all("a", href=True):
         m = re.search(r"[?&]page=(\d+)", a.get("href", ""))
         if m:
             numeri.append(int(m.group(1)))
-        t = a.get_text(strip=True)
-        if t.isdigit():
-            numeri.append(int(t))
     return max(numeri) if numeri else 1
 
 
