@@ -2,7 +2,7 @@ name: Monitora Tester Profumi
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # ogni 15 minuti
+    - cron: '*/10 * * * *'  # ogni 10 minuti
   workflow_dispatch:          # permette di avviarlo manualmente con un click
 
 jobs:
