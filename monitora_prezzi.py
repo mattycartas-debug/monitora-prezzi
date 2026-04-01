@@ -22,7 +22,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "INSERISCI_QUI_IL_TUO_CHAT
 
 SOGLIA_SCONTO    = 0.70          # 70% di calo per scattare l'alert
 FILE_PREZZI      = "prezzi_salvati.json"
-PAUSA_TRA_PAGINE = 3.0           # secondi tra una pagina e l'altra
+PAUSA_TRA_PAGINE = 1.5           # secondi tra una pagina e l'altra
 
 # Solo la sezione profumi
 CATEGORIE = [
